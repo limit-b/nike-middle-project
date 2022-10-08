@@ -1,18 +1,28 @@
 # nike-test
 
-## 경로
+## 구조
 
 ### 이클립스
 
 ```bash
-Project
+myProject
 ├── res
 ├── src
 └── WebContent
     ├── css
+    │   ├── component
+    │   ├── config
+    │   │   ├── _reset.css(스타일 초기화)
+    │   │   └── _variables.css(스타일 변수)
+    │   ├── page
+    │   └── style.css
     ├── html
+    │   ├── component
+    │   └── page
     ├── images(아직 없음)
     ├── js
+    │   ├── index.js
+    │   └── jquery.serializejson.min.js
     ├── META-INF
     ├── WEB-INF
     ├── .prettierrc(필요 없음)
@@ -27,9 +37,19 @@ jsstudy
 └── nike-test
     ├── .git
     ├── css
+    │   ├── component
+    │   ├── config
+    │   │   ├── _reset.css(스타일 초기화)
+    │   │   └── _variables.css(스타일 변수)
+    │   ├── page
+    │   └── style.css
     ├── html
+    │   ├── component
+    │   └── page
     ├── images(아직 없음)
     ├── js
+    │   ├── index.js
+    │   └── jquery.serializejson.min.js
     ├── .prettierrc
     ├── README.md
     └── index.html
