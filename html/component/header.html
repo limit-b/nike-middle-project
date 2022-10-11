@@ -1,32 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
 <!-- li 요소 안에 div 요소가 존재 -->
 <!-- 평소에는 div 요소가 보이지 않고, 좀 더 위쪽에 존재 -->
 <!-- :hover하면 div 요소가 보여지면서 아래로 내려옴 -->
+<!-- css 불러오기 -->
+<link rel="stylesheet" href="../../css/style.css">
 
-<nav>
-    <ul>
-        <li>
-            <a href="">New Releases</a>
-            <div></div>
-        </li>
-        <li>
-            <a href="">Men</a>
-            <div></div>
-        </li>
-        <li>
-            <a href="">Women</a>
-            <div></div>
-        </li>
-        <li>
-            <a href="">Kids</a>
-            <div></div>
-        </li>
-        <li>
-            <a href="">Sale</a>
-            <div></div>
-        </li>
-        <li>
-            <a href="">SNKRS</a>
-            <div></div>
-        </li>
-    </ul>
-</nav>
+<div class="top-menu-bar">
+    <div class="top-menu-bar__logo"><a href="#"><img src="../../imges/나이키로고-removebg-preview.png" alt=""></a></div>
+    <nav class="top-menu-bar__nav">
+        <ul>
+            <li>
+                <a href="">New Releases</a>
+                <div></div>
+            </li>
+            <li>
+                <a href="">Men</a>
+                <div></div>
+            </li>
+            <li>
+                <a href="">Women</a>
+                <div></div>
+            </li>
+            <li>
+                <a href="">Kids</a>
+                <div></div>
+            </li>
+            <li>
+                <a href="">Sale</a>
+                <div></div>
+            </li>
+            <li>
+                <a href="">SNKRS</a>
+                <div></div>
+            </li>
+        </ul>
+    </nav>
+    <div class="top-menu-bar__search">
+        <span class="icon"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <input type="search" placeholder="검색">
+    </div>
+    <div class ="top-menu-bar__heartnbag">
+        <a href="#"><i class="fa-regular fa-heart fa-lg"></i></a> 
+        <a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a> 
+    </div>
+
+</div>
+
+<script src="https://kit.fontawesome.com/c08363d7dd.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
