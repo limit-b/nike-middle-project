@@ -45,10 +45,18 @@ header .menu-bar__left div {
     padding: 0 12px;
 }
 
-header .menu-bar__right span {
-    font-size: 12px;
+header .menu-bar__left svg:hover {
+    fill: #666666;
 }
 
+header .menu-bar__right span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+header .menu-bar__right span:hover {
+    color: #666666;
+}
 
 /* 기본 설정 */
 .top-menu-bar{
@@ -106,7 +114,6 @@ header .menu-bar__right span {
 .top-menu-bar__nav__title:hover{
     border-bottom: 2px solid black;
 }
-
 
 /* 상세 메뉴 (드롭 메뉴) */
 .top-menu-bar__nav__menu {
