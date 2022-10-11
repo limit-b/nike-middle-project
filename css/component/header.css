@@ -25,16 +25,18 @@ header li a {
     text-decoration: none;
 } */
 
+
+/* 기본 설정 */
 .top-menu-bar{
-    width: 100%;
-    height: 60px;
-    margin-top: 30px;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content:center;
-    background-color: white;
     box-sizing: border-box;
-    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 60px;
+    background-color: white;
 
 }
 .top-menu-bar__logo{
@@ -51,35 +53,64 @@ header li a {
     height: 80px;
 
 }
+
+/* 메뉴 - New Release, Men, Women, Kids, Sale, SNKRS */
 .top-menu-bar__nav ul{
-    display: flex;
-    width: 80%;
     position : absolute;
     right : 150px;
+    display: flex;
     justify-content: center;
+    width: 80%;
 }
 
-.top-menu-bar__nav ul li a{
+.top-menu-bar__nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+
+.top-menu-bar__nav__title{
+    padding: 0 20px;
+    font-size: 20px;
     letter-spacing:-0.8px;
-    padding:0 20px;
 }
 
-.top-menu-bar__nav ul li a:hover{
+.top-menu-bar__nav__title a{
+    padding: 0 20px;
+    font-size: 20px;
+    letter-spacing:-0.8px;
+}
+
+.top-menu-bar__nav__title:hover{
     border-bottom: 2px solid black;
 }
 
 
+/* 상세 메뉴 (드롭 메뉴) */
+.top-menu-bar__nav__menu {
+    position:absolute;
+    display: flex;
+    width:100%;
+    height:auto;
+    background-color:#fff;
+}
+
+.top-menu-bar__nav__menu ul{
+    margin: 0 100px;
+}
+
+/* 검색 */
 .top-menu-bar__search{
-    height: 40px;
-    width: 10%;
-    background-color: var(--main-bg-color);
     position : absolute;
     right : 150px;
-    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-left: 20%;
+    height: 40px;
+    width: 10%;
+    border-radius: 20px;
+    background-color: var(--main-bg-color);
 }
 
 .top-menu-bar__search i{
@@ -87,24 +118,25 @@ header li a {
 }
 
 .top-menu-bar__search input{
+    margin-left: 10px;
     width: 80%;
     background: none;
     font-size: 15px;
-    margin-left: 10px;
 }
 
 .top-menu-bar__search input::placeholder{
     color: #d6d6d6;
 }
 
+/* 찜, 장바구니 */
 .top-menu-bar__heartnbag{
     position : absolute;
     right : 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50px;
     margin: 0 10px;
+    width: 50px;
 }
 
 .top-menu-bar__heartnbag i{
