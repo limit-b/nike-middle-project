@@ -128,15 +128,15 @@ table {
     border-spacing: 0;
 }
 
-input{
+input {
     border: none;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
