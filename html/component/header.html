@@ -12,7 +12,7 @@
         <!-- css 불러오기 -->
         <link rel="stylesheet" href="../../css/style.css" />
 
-        <div class="menu-bar">
+<div class="menu-bar">
             <div class="menu-bar__left">
                 <a href="https://www.nike.com/kr/jordan">
                     <div>
@@ -51,103 +51,234 @@
                 <a href="#"><span>로그인</span></a>
             </div>
         </div>
-        <div class="top-menu-bar">
-            <div class="top-menu-bar__logo">
-                <a href="#"><img src="../../imges/nikeLogo.png" alt="" /></a>
-            </div>
-            <nav class="top-menu-bar__nav">
-                <ul>
-                    <li>
-                        <a href="#"
-                            ><div class="top-menu-bar__nav__title">
-                                New Releases
-                            </div></a
-                        >
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><div class="top-menu-bar__nav__title">Men</div></a
-                        >
-                        <div></div>
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><div class="top-menu-bar__nav__title">
-                                Women
-                            </div></a
-                        >
-                        <div></div>
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><div class="top-menu-bar__nav__title">Kids</div></a
-                        >
-                        <div></div>
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><div class="top-menu-bar__nav__title">Sale</div></a
-                        >
-                        <div></div>
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><div class="top-menu-bar__nav__title">
-                                SNKRS
-                            </div></a
-                        >
-                        <div></div>
-                    </li>
-                </ul>
-            </nav>
-            <div class="top-menu-bar__search">
-                <span class="icon"
-                    ><i class="fa-solid fa-magnifying-glass fa-lg"></i
-                ></span>
-                <input type="search" placeholder="검색" />
-            </div>
-            <div class="top-menu-bar__heartnbag">
-                <a href="#"><i class="fa-regular fa-heart fa-lg"></i></a>
-                <a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a>
-            </div>
-        </div>
 
-        <div class="top-menu-bar__nav__menu">
-            <ul>
-                <h1>NEW & Featured</h1>
-                <li><a href="#" class="items">신상품 전체보기</a></li>
-                <li><a href="#" class="items">SNKRS</a></li>
-                <li><a href="#" class="items">가을 컬렉션</a></li>
-                <li><a href="#" class="items">에어포스 1</a></li>
-                <li><a href="#" class="items">ACG</a></li>
-                <li><a href="#" class="items">NikeLab</a></li>
-                <li><a href="#" class="items">지속 가능 컬렉션</a></li>
-            </ul>
+<div class="top-menu-bar">
+    <div class="top-menu-bar__logo"><a href="#"><img src="../../imges/nikeLogo.png" alt=""></a></div>
+    <nav class="top-menu-bar__nav">
+        <ul>
+            <li>
+                <a href="#"><div id="nr" class="top-menu-bar__nav__title">New Releases</div></a>
+            </li>
+            <li>
+                <a href="#"><div id="men" class="top-menu-bar__nav__title">Men</div></a>
+                <div></div>
+            </li>
+            <li>
+                <a href="#"><div id="women" class="top-menu-bar__nav__title">Women</div></a>
+                <div></div>
+            </li>
+            <li>
+                <a href="#"><div id="kids" class="top-menu-bar__nav__title">Kids</div></a>
+                <div></div>
+            </li>
+            <li>
+                <a href="#"><div id="sale" class="top-menu-bar__nav__title">Sale</div></a>
+                <div></div>
+            </li>
+            <li>
+                <a href="#"><div id="snkrs" class="top-menu-bar__nav__title">SNKRS</div></a>
+                <div></div>
+            </li>
+        </ul>
+    </nav>
+    <div class="top-menu-bar__search">
+        <span class="icon"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <input type="search" placeholder="검색">
+    </div>
+    <div class ="top-menu-bar__heartnbag">
+        <a href="#"><i class="fa-regular fa-heart fa-lg"></i></a> 
+        <a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a> 
+    </div>
 
-            <ul>
-                <h1>남성 신상품</h1>
-                <li><a href="#" class="items">신발</a></li>
-                <li><a href="#" class="items">의류</a></li>
-                <li><a href="#" class="items">용품</a></li>
-                <li><a href="#" class="items">전체보기</a></li>
-            </ul>
+</div>
 
-            <ul>
-                <h1>여성 신상품</h1>
-                <li><a href="#" class="items">신발</a></li>
-                <li><a href="#" class="items">의류</a></li>
-                <li><a href="#" class="items">용품</a></li>
-                <li><a href="#" class="items">전체보기</a></li>
-            </ul>
+<div id="nr_d" class="top-menu-bar__nav__menu hidden">
+         <ul>
+            <h1>NEW & Featured</h1>
+            <li><a href="#" class="items">신상품 전체보기</a></li>
+            <li><a href="#" class="items">SNKRS</a></li>
+            <li><a href="#" class="items">가을 컬렉션</a></li>
+            <li><a href="#" class="items">에어포스 1</a></li>
+            <li><a href="#" class="items">ACG</a></li>
+            <li><a href="#" class="items">NikeLab</a></li>
+            <li><a href="#" class="items">지속 가능 컬렉션</a></li>
+        </ul>
 
-            <ul>
-                <h1>키즈 신상품</h1>
-                <li><a href="#" class="items">신발</a></li>
-                <li><a href="#" class="items">의류</a></li>
-                <li><a href="#" class="items">용품</a></li>
-                <li><a href="#" class="items">전체보기</a></li>
-            </ul>
-        </div>
+        <ul>
+            <h1>남성 신상품</h1>
+            <li><a href="#" class="items">신발</a></li>
+            <li><a href="#" class="items">의류</a></li>
+            <li><a href="#" class="items">용품</a></li>
+            <li><a href="#" class="items">전체보기</a></li>
+        </ul>
+
+        <ul>
+            <h1>여성 신상품</h1>
+            <li><a href="#" class="items">신발</a></li>
+            <li><a href="#" class="items">의류</a></li>
+            <li><a href="#" class="items">용품</a></li>
+            <li><a href="#" class="items">전체보기</a></li>
+        </ul>
+
+        <ul>
+            <h1>키즈 신상품</h1>
+            <li><a href="#" class="items">신발</a></li>
+            <li><a href="#" class="items">의류</a></li>
+            <li><a href="#" class="items">용품</a></li>
+            <li><a href="#" class="items">전체보기</a></li>
+        </ul>
+</div>
+
+<div id="m_d" class="top-menu-bar__nav__menu hidden">
+         <ul>
+            <h1>NEW & Featured</h1>
+            <li><a href="#" class="items">신상품</a></li>
+            <li><a href="#" class="items">SNKRS</a></li>
+            <li><a href="#" class="items">MUST HAVES</a></li>
+            <li><a href="#" class="items">MEMBER SHOP</a></li>
+            <li><a href="#" class="items">가을 에센셜</a></li>
+            <li><a href="#" class="items">지속 가능 컬렉션</a></li>
+            <li><a href="#" class="items">Sale: Up to 40% OFF</a></li>
+        </ul>
+
+        <ul>
+            <h1>신발</h1>
+            <li><a href="#" class="items">신발 전체</a></li>
+            <li><a href="#" class="items">라이프스타일</a></li>
+            <li><a href="#" class="items">러닝</a></li>
+            <li><a href="#" class="items">워킹</a></li>
+            <li><a href="#" class="items">조던</a></li>
+        </ul>
+
+        <ul>
+            <h1>의류</h1>
+            <li><a href="#" class="items">의류전체</a></li>
+            <li><a href="#" class="items">탑 & 티셔츠</a></li>
+            <li><a href="#" class="items">팬츠 & 타이츠</a></li>
+            <li><a href="#" class="items">후디 & 크루</a></li>
+        </ul>
+
+        <ul>
+            <h1>용품</h1>
+            <li><a href="#" class="items">모자 & 헤드밴드</a></li>
+            <li><a href="#" class="items">가방</a></li>
+            <li><a href="#" class="items">애플워치</a></li>
+            <li><a href="#" class="items">Sale: Up to 40% OFF</a></li>
+        </ul>
+</div>
+
+<div id="w_d" class="top-menu-bar__nav__menu hidden">
+         <ul>
+            <h1>NEW & Featured</h1>
+            <li><a href="#" class="items">신상품</a></li>
+            <li><a href="#" class="items">SNKRS</a></li>
+            <li><a href="#" class="items">MUST HAVES</a></li>
+            <li><a href="#" class="items">MEMBER SHOP</a></li>
+            <li><a href="#" class="items">가을 에센셜</a></li>
+            <li><a href="#" class="items">지속 가능 컬렉션</a></li>
+            <li><a href="#" class="items">Sale: Up to 40% OFF</a></li>
+        </ul>
+
+        <ul>
+            <h1>신발</h1>
+            <li><a href="#" class="items">신발 전체</a></li>
+            <li><a href="#" class="items">라이프스타일</a></li>
+            <li><a href="#" class="items">러닝</a></li>
+            <li><a href="#" class="items">워킹</a></li>
+            <li><a href="#" class="items">조던</a></li>
+        </ul>
+
+        <ul>
+            <h1>의류</h1>
+            <li><a href="#" class="items">의류전체</a></li>
+            <li><a href="#" class="items">탑 & 티셔츠</a></li>
+            <li><a href="#" class="items">팬츠 & 타이츠</a></li>
+            <li><a href="#" class="items">후디 & 크루</a></li>
+        </ul>
+
+        <ul>
+            <h1>용품</h1>
+            <li><a href="#" class="items">모자 & 헤드밴드</a></li>
+            <li><a href="#" class="items">가방</a></li>
+            <li><a href="#" class="items">애플워치</a></li>
+            <li><a href="#" class="items">Sale: Up to 40% OFF</a></li>
+        </ul>
+    </div>
+    
+    
+    
+    <div id="k_d" class="top-menu-bar__nav__menu hidden">
+        <ul>
+            <h1>NEW & Featured</h1>
+            <li><a href="#" class="items">신상품</a></li>
+            <li><a href="#" class="items">가을 컬렉션</a></li>
+            <li><a href="#" class="items">다이나모 컬렉션</a></li>
+            <li><a href="#" class="items">플라이이즈 컬렉션</a></li>
+            <li><a href="#" class="items">나이키 키즈 클래식</a></li>
+            <li><a href="#" class="items">아이들을 위한 선물</a></li>
+            <li><a href="#" class="items">조던 키즈</a></li>
+            <li><a href="#" class="items">Sale: Up to 40% OFF</a></li>
+        </ul>
+
+        <ul>
+            <h1>사이즈별</h1>
+            <li><a href="#" class="items">베이비</a></li>
+            <li><a href="#" class="items">리틀키즈</a></li>
+            <li><a href="#" class="items">주니어</a></li>
+        </ul>
+        <ul>
+            <h1>신발</h1>
+            <li><a href="#" class="items">베이비</a></li>
+            <li><a href="#" class="items">리틀키즈</a></li>
+            <li><a href="#" class="items">주니어</a></li>
+            <li><a href="#" class="items">라이프스타일</a></li>
+        </ul>
+
+        <ul>
+            <h1>의류</h1>
+            <li><a href="#" class="items">베이비</a></li>
+            <li><a href="#" class="items">리틀키즈</a></li>
+            <li><a href="#" class="items">주니어</a></li>
+        </ul>
+
+        <ul>
+            <h1>용품</h1>
+            <li><a href="#" class="items">가방</a></li>
+            <li><a href="#" class="items">모자</a></li>
+            <li><a href="#" class="items">양말</a></li>
+        </ul>
+</div>
+
+<div id="s_d" class="top-menu-bar__nav__menu hidden">
+         <ul>
+            <h1>Sale</h1>
+            <li><a href="#" class="items">Sale</a></li>
+        </ul>
+
+        <ul>
+            <h1>Mens Sale</h1>
+            <li><a href="#" class="items">신발</a></li>
+            <li><a href="#" class="items">의류</a></li>
+            <li><a href="#" class="items">용품</a></li>
+            <li><a href="#" class="items">전체보기</a></li>
+        </ul>
+
+        <ul>
+            <h1>Womens Sale</h1>
+            <li><a href="#" class="items">신발</a></li>
+            <li><a href="#" class="items">의류</a></li>
+            <li><a href="#" class="items">용품</a></li>
+            <li><a href="#" class="items">전체보기</a></li>
+        </ul>
+
+        <ul>
+            <h1>Kids Sale</h1>
+            <li><a href="#" class="items">신발</a></li>
+            <li><a href="#" class="items">의류</a></li>
+            <li><a href="#" class="items">용품</a></li>
+            <li><a href="#" class="items">전체보기</a></li>
+        </ul>
+</div>
 
         <script
             src="https://kit.fontawesome.com/c08363d7dd.js"
