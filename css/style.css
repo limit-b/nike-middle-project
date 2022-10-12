@@ -9,8 +9,8 @@
 /* var() 사용자 지정 속성, 또는 CSS 변수 */
 /* 변수 모음 파일 위치는 "./config/_variables.css" */
 
-.hidden{
-    display: none;
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -19,3 +19,6 @@ body {
     background-color: var(--main-bg-color);
 }
 
+.hidden{
+    display: none;
+}
