@@ -4,7 +4,7 @@ $(function () {
      */
     $("header").load("./html/component/header.html");
     $("footer").load("./html/component/footer.html");
-    
+
     var test = function (event) {
         console.log(event.target);
     };

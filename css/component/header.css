@@ -59,11 +59,11 @@ header .menu-bar__right span:hover {
 }
 
 /* 기본 설정 */
-.top-menu-bar{
+.top-menu-bar {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     box-sizing: border-box;
     margin-top: 30px;
     width: 100%;
@@ -85,58 +85,57 @@ header .menu-bar__right span:hover {
 }
 
 /* 메뉴 - New Release, Men, Women, Kids, Sale, SNKRS */
-.top-menu-bar__nav ul{
-    position : absolute;
-    right : 150px;
+.top-menu-bar__nav ul {
+    position: absolute;
+    right: 150px;
     display: flex;
     justify-content: center;
     width: 80%;
 }
 
-.top-menu-bar__nav ul li{
+.top-menu-bar__nav ul li {
     display: flex;
     align-items: center;
 }
 
-
-.top-menu-bar__nav__title{
+.top-menu-bar__nav__title {
     padding: 0 20px;
     font-size: 20px;
-    letter-spacing:-0.8px;
+    letter-spacing: -0.8px;
 }
 
-.top-menu-bar__nav__title a{
+.top-menu-bar__nav__title a {
     padding: 0 20px;
     font-size: 20px;
-    letter-spacing:-0.8px;
+    letter-spacing: -0.8px;
 }
 
-.top-menu-bar__nav__title:hover{
+.top-menu-bar__nav__title:hover {
     border-bottom: 2px solid black;
 }
 
 /* 상세 메뉴 (드롭 메뉴) */
 .top-menu-bar__nav__menu {
-    position:absolute;
+    position: absolute;
     display: flex;
     justify-content: center;
-    width:100%;
-    height:auto;
-    background-color:#fff;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
 }
 
-.top-menu-bar__nav__menu ul{
+.top-menu-bar__nav__menu ul {
     margin: 30px;
     color: rgba(0, 0, 0, 0.5);
 }
 
-.top-menu-bar__nav__menu h1{
-    margin-bottom: 25px;    
+.top-menu-bar__nav__menu h1 {
+    margin-bottom: 25px;
     font-size: 18px;
     color: black;
 }
 
-.top-menu-bar__nav__menu ul li{
+.top-menu-bar__nav__menu ul li {
     display: flex;
     justify-content: flex-start;
     width: 150px;
@@ -145,9 +144,9 @@ header .menu-bar__right span:hover {
 }
 
 /* 검색 */
-.top-menu-bar__search{
-    position : absolute;
-    right : 150px;
+.top-menu-bar__search {
+    position: absolute;
+    right: 150px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -162,7 +161,7 @@ header .menu-bar__right span:hover {
     margin-left: 10px;
 }
 
-.top-menu-bar__search input{
+.top-menu-bar__search input {
     margin-left: 10px;
     width: 80%;
     background: none;
@@ -174,9 +173,9 @@ header .menu-bar__right span:hover {
 }
 
 /* 찜, 장바구니 */
-.top-menu-bar__heartnbag{
-    position : absolute;
-    right : 80px;
+.top-menu-bar__heartnbag {
+    position: absolute;
+    right: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
