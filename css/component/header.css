@@ -119,13 +119,29 @@ header .menu-bar__right span:hover {
 .top-menu-bar__nav__menu {
     position:absolute;
     display: flex;
+    justify-content: center;
     width:100%;
     height:auto;
     background-color:#fff;
 }
 
 .top-menu-bar__nav__menu ul{
-    margin: 0 100px;
+    margin: 30px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.top-menu-bar__nav__menu h1{
+    margin-bottom: 25px;    
+    font-size: 18px;
+    color: black;
+}
+
+.top-menu-bar__nav__menu ul li{
+    display: flex;
+    justify-content: flex-start;
+    width: 150px;
+    line-height: 25px;
+    font-size: 15px;
 }
 
 /* 검색 */
