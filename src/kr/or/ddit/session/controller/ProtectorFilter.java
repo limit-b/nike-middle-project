@@ -21,31 +21,25 @@ import kr.or.ddit.vo.MemberVO;
 @WebFilter(
 //		dispatcherTypes = { DispatcherType.REQUEST, DispatcherType.FORWARD },
 //		servletNames = { "SignUpController" },
-		urlPatterns = {
-			"/member/myInfo.do",
-			"/ONUM/myPage.do",
-			"/selectAllWish.do",
-			"/payment.do",
-			"/selectAllCart.do",
-			"/wish/insertCart.do",
-			"/returnsList.do",
-			"/returnsList_Admin.do"
-		}
-)
+		urlPatterns = { "/member/myInfo.do", "/ONUM/myPage.do",
+				"/selectAllWish.do", "/payment.do", "/selectAllCart.do",
+				"/wish/insertCart.do", "/returnsList.do",
+				"/returnsList_Admin.do" })
 public class ProtectorFilter implements Filter {
 
 	/**
-	 * @see Filter#destroy()
+	 * @see Filter#init(FilterConfig)
 	 */
-	public void destroy() {
+	public void init(FilterConfig fConfig) throws ServletException {
+		System.out.println("*** ProtectorFilter init");
 	}
 
 	/**
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
 	 * 
 	 */
-	public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
-			throws IOException, ServletException {
+	public void doFilter(ServletRequest req, ServletResponse res,
+			FilterChain chain) throws IOException, ServletException {
 
 		req.setCharacterEncoding("UTF-8");
 		res.setCharacterEncoding("UTF-8");
@@ -53,7 +47,8 @@ public class ProtectorFilter implements Filter {
 		HttpServletRequest request = (HttpServletRequest) req;
 		HttpServletResponse response = (HttpServletResponse) res;
 
-		MemberVO member = (MemberVO) request.getSession(false).getAttribute("member");
+		MemberVO member = (MemberVO) request.getSession(false)
+				.getAttribute("member");
 
 		if (member == null) {
 			/**
@@ -65,11 +60,10 @@ public class ProtectorFilter implements Filter {
 			PrintWriter out = response.getWriter();
 			String url = request.getContextPath() + "/login.do";
 
-			out.println("<script>alert('로그인 필요'); location.href='" + url + "';</script>");
+			out.println("<script>alert('로그인 필요'); location.href='" + url
+					+ "';</script>");
 			out.flush();
 			out.close();
-
-//			response.sendRedirect(request.getContextPath() + "/login.do");
 
 		} else {
 			/**
@@ -83,9 +77,10 @@ public class ProtectorFilter implements Filter {
 	}
 
 	/**
-	 * @see Filter#init(FilterConfig)
+	 * @see Filter#destroy()
 	 */
-	public void init(FilterConfig fConfig) throws ServletException {
+	public void destroy() {
+		System.out.println("*** ProtectorFilter destroy");
 	}
 
 }

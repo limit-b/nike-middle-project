@@ -19,31 +19,25 @@
             </ol>
       
             <!-- Wrapper for slides -->
-            <!-- 새로고침하면 랜덤으로 새로울 이미지가 나온다 -->
+            <!-- 새로고침하면 랜덤으로 새로운 이미지가 나온다 -->
             <div class="carousel-inner">
            
                 <div class="item active">
-<!--                     <img src="https://picsum.photos/1920/1200?random=1" alt="Los Angeles" style="width:100%;"> -->
-                    <video type="video/mp4" src="/nikepro/media/nike_video.mp4" width="1920" muted loop autoplay></video>
+                    <video type="video/mp4" src="${pageContext.request.contextPath }/media/nike_video.mp4" width="1920" muted loop autoplay></video>
                     <div class="carousel-caption">
-<!--                         <h1>첫번째</h1> -->
-<!--                         <p>DDIT is always so much fun!</p> -->
                     </div>
                 </div>
             
                 <div class="item">
-                     <video type="video/mp4" src="/nikepro/media/team_video.mp4" width="1920" muted loop autoplay></video>
+                     <video type="video/mp4" src="${pageContext.request.contextPath }/media/team_video.mp4" width="1920" muted loop autoplay></video>
                     <div class="carousel-caption">
-<!--                         <h1>두번째</h1> -->
-<!--                         <p>Thank you, DDIT!</p> -->
                     </div>
                 </div>
             
                 <div class="item">
-                    <video type="video/mp4" src="/nikepro/media/team4.mp4" width="1920" muted loop autoplay></video>
+                    <img src="https://picsum.photos/1920/1200?random=1" alt="picsum random image" style="width:100%;">
+<%--                     <video type="video/mp4" src="${pageContext.request.contextPath }/media/team4.mp4" width="1920" muted loop autoplay></video> --%>
                     <div class="carousel-caption">
-<!--                         <h1>세번째</h1> -->
-<!--                         <p>We love the Big DDIT!</p> -->
                     </div>
                 </div>
             

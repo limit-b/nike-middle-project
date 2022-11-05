@@ -1,6 +1,8 @@
 package kr.or.ddit.cart.controller;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,35 +19,43 @@ import kr.or.ddit.cart.service.ICartService;
 public class DeleteCart extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		request.setCharacterEncoding("utf-8");
-		String cart_no = request.getParameter("cart_no");
-		System.out.println("cart_no확인 :" + cart_no);
-		
+	@Override
+	protected void doGet(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+
+		try {
+			request.setCharacterEncoding("utf-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+
+		String cartNo = request.getParameter("cart_no");
+		System.out.println("cart_no확인 :" + cartNo);
+
 		ICartService service = CartServiceImpl.getInstance();
-		
-		int res = service.deleteCart(cart_no);
-		System.out.println("res:" +res);
-		
-		
+
+		int res = service.deleteCart(cartNo);
+		System.out.println("res:" + res);
+
 		request.setAttribute("result", res);
-		
-		request.getRequestDispatcher("/jhs/result.jsp").forward(request, response);
-		
-		
-		
-		
-		
-		
-		
-	
-	
+
+		try {
+			request.getRequestDispatcher("/jhs/result.jsp").forward(request,
+					response);
+		} catch (ServletException | IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+	@Override
+	protected void doPost(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		try {
+			doGet(request, response);
+		} catch (ServletException | IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }

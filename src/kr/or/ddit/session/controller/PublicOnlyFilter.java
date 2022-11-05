@@ -25,24 +25,25 @@ import kr.or.ddit.vo.MemberVO;
 public class PublicOnlyFilter implements Filter {
 
 	/**
-	 * @see Filter#destroy()
+	 * @see Filter#init(FilterConfig)
 	 */
-	public void destroy() {
+	public void init(FilterConfig fConfig) throws ServletException {
+		System.out.println("*** PublicOnlyFilter init");
 	}
 
 	/**
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
 	 * 
 	 */
-	public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
-			throws IOException, ServletException {
+	public void doFilter(ServletRequest req, ServletResponse res,
+			FilterChain chain) throws IOException, ServletException {
 
 		req.setCharacterEncoding("UTF-8");
 		res.setCharacterEncoding("UTF-8");
 
 		HttpServletRequest request = (HttpServletRequest) req;
 		HttpServletResponse response = (HttpServletResponse) res;
-		
+
 		HttpSession session = request.getSession(false);
 		MemberVO member = (MemberVO) session.getAttribute("member");
 
@@ -65,9 +66,10 @@ public class PublicOnlyFilter implements Filter {
 	}
 
 	/**
-	 * @see Filter#init(FilterConfig)
+	 * @see Filter#destroy()
 	 */
-	public void init(FilterConfig fConfig) throws ServletException {
+	public void destroy() {
+		System.out.println("*** PublicOnlyFilter destroy");
 	}
 
 }
